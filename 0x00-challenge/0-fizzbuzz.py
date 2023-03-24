@@ -1,5 +1,6 @@
 #!/usr/bin/python3
 """ FizzBuzz
+    Change logic order - test if (i % 3) == 0 and (i % 5) first
 """
 import sys
 
@@ -7,6 +8,7 @@ import sys
 def fizzbuzz(num):
     """
     FizzBuzz function prints numbers from 1 to n separated by a space.
+
     - For multiples of three print "Fizz" instead of the number and for
       multiples of five print "Buzz".
     - For numbers which are multiples of both three and five print "FizzBuzz".
@@ -15,7 +17,6 @@ def fizzbuzz(num):
         return
 
     tmp_result = []
-
     for i in range(1, num + 1):
         if (i % 3) == 0 and (i % 5) == 0:
             tmp_result.append("FizzBuzz")
